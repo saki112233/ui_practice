@@ -13,43 +13,7 @@ class DesignContainer extends StatefulWidget {
 }
 
 class _DesignContainerState extends State<DesignContainer> {
-  List<ListModel> BuyerList = [
-    ListModel(
-        buyer: "Buyer A",
-        firstPart: 'For',
-        personNumer: '1',
-        secondPart: "person",
-        date: 'Today',
-        button: "Confirm"),
-    ListModel(
-        buyer: "Buyer B",
-        firstPart: 'For',
-        personNumer: '2',
-        secondPart: "person",
-        date: 'Tomorrow',
-        button: "Confirm"),
-    ListModel(
-        buyer: "Buyer C",
-        firstPart: 'For',
-        personNumer: '3',
-        secondPart: "person",
-        date: 'yesterday',
-        button: "Confirm"),
-    ListModel(
-        buyer: "Buyer D",
-        firstPart: 'For',
-        personNumer: '4',
-        secondPart: "person",
-        date: '2 days later',
-        button: "Confirm"),
-    ListModel(
-        buyer: "Buyer E",
-        firstPart: 'For',
-        personNumer: '5',
-        secondPart: "person",
-        date: '3 days late',
-        button: "Confirm"),
-  ];
+  final FixedExtentScrollController _controller = FixedExtentScrollController();
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
@@ -246,60 +210,14 @@ class _DesignContainerState extends State<DesignContainer> {
             Expanded(
               child: Container(
                 color: Colors.white,
-                child: ListView.builder(
-                    itemExtent: 50,
-                    scrollDirection: Axis.vertical,
-                    shrinkWrap: true,
-                    itemCount: BuyerList.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Container(
-                        child: Row(
-                          children: [
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text(
-                              BuyerList[index].buyer,
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w600),
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.35,
-                            ),
-                            Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Text(BuyerList[index].firstPart),
-                                    Text(
-                                      BuyerList[index].personNumer,
-                                      style: TextStyle(color: Colors.red),
-                                    ),
-                                    Text(BuyerList[index].secondPart)
-                                  ],
-                                ),
-                                Text(BuyerList[index].date),
-                              ],
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.02,
-                            ),
-                            Container(
-                              height: 40,
-                              width: 60,
-                              decoration: BoxDecoration(
-                                  color: Colors.red,
-                                  border: Border.all(color: Colors.red)),
-                              child: Center(
-                                  child: Text(
-                                BuyerList[index].button,
-                                style: TextStyle(color: Colors.white),
-                              )),
-                            ),
-                          ],
-                        ),
-                      );
-                    }),
+                child: ListWheelScrollView(
+                  controller: _controller,
+                  itemExtent: 80,
+                  magnification: 1.2,
+
+                  physics: FixedExtentScrollPhysics(),
+                  children: ListModel.listTiles.toList(), // Here listtiles is the List of Widgets.
+                ),
               ),
             ),
             Container(
