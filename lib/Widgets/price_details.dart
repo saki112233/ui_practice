@@ -16,37 +16,37 @@ class PriceDeatils extends StatelessWidget {
         Row(
           children: [
             Expanded(
+              flex: 2,
               child: Row(
                 children: [
                   Text(
                     newPrice,
-                    style: TextStyle(fontSize: 30, color: Colors.red),
+                    style: const TextStyle(fontSize: 30, color: Colors.red),
                   ),
-                  SizedBox(width: 10,),
+                  const SizedBox(width: 10,),
                   Text(
                     oldPrice,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 15,
                         decoration: TextDecoration.lineThrough,
                         color: Colors.grey),
                   )
                 ],
               ),
-              flex: 2,
             ),
             Expanded(
               child: Text(
                 discount,
-                style: TextStyle(fontSize: 15, color: Colors.grey),
+                style: const TextStyle(fontSize: 15, color: Colors.grey),
               ),
             )
           ],
         ),
-        Container(
+        SizedBox(
           height: 55,
           child: Stack(
             children: [
-              Align(
+              const Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   maxLines: 2,
@@ -61,7 +61,7 @@ class PriceDeatils extends StatelessWidget {
                 child: Container(
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.red)),
-                    child: Text(
+                    child: const Text(
                       "data",
                       style: TextStyle(color: Colors.red),
                     )),

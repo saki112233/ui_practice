@@ -5,22 +5,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -28,7 +28,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: const Text("Confirm",style: const TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -36,22 +36,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -59,7 +59,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -67,22 +67,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -90,7 +90,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: const Text("Confirm",style: const TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -98,22 +98,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -121,7 +121,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -129,22 +129,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -152,7 +152,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: const Text("Confirm",style: TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -160,22 +160,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -183,7 +183,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -191,22 +191,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -214,7 +214,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: const Text("Confirm",style: TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -222,22 +222,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -245,7 +245,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: const Text("Confirm",style: TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -253,22 +253,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
           style: TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -276,7 +276,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: const Text("Confirm",style: TextStyle(color: Colors.white),)),
         )
         ,
       ),
@@ -284,22 +284,22 @@ class ListModel {
     Container(
       color: Colors.grey.shade100,
       child: ListTile(
-        leading: Text(
+        leading: const Text(
           'Buyer A',
-          style: TextStyle(
+          style: const TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
         title: Padding(
-          padding: EdgeInsets.only(left:50.0),
+          padding: const EdgeInsets.only(left:50.0),
           child: Row(
-            children: [
+            children: const [
               Text("Add for"),
               Text("1",style: TextStyle(color: Colors.red),),
               Text("Person")
             ],
           ),
         ),
-        subtitle: Padding(
+        subtitle: const Padding(
           padding: EdgeInsets.only(left:50.0),
           child: Text("Beautiful View..!"),
         ),
@@ -307,7 +307,7 @@ class ListModel {
           color: Colors.red,
           height: 40,
           width: 60,
-          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+          child: const Center(child: const Text("Confirm",style: TextStyle(color: Colors.white),)),
         )
         ,
       ),
