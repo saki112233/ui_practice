@@ -1,20 +1,6 @@
 import 'package:flutter/material.dart';
 
 class ListModel {
-  String buyer;
-  String firstPart;
-  String personNumer;
-   String secondPart;
-  String date;
-  String button;
-  ListModel(
-      {required this.buyer,
-      required this.firstPart,
-        required this.secondPart,
-      required this.personNumer,
-      required this.date,
-      required this.button});
-
   static List<Widget> listTiles = [
     Container(
       color: Colors.grey.shade100,
@@ -47,257 +33,284 @@ class ListModel {
         ,
       ),
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
-    ListTile(
-      leading: Text(
-        'Buyer A',
-        style: TextStyle(
-            color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
-      ),
-      title: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Row(
-          children: [
-            Text("Add for"),
-            Text("1",style: TextStyle(color: Colors.red),),
-            Text("Person")
-          ],
+    Container(
+      color: Colors.grey.shade100,
+      child: ListTile(
+        leading: Text(
+          'Buyer A',
+          style: TextStyle(
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w900),
         ),
+        title: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Row(
+            children: [
+              Text("Add for"),
+              Text("1",style: TextStyle(color: Colors.red),),
+              Text("Person")
+            ],
+          ),
+        ),
+        subtitle: Padding(
+          padding: EdgeInsets.only(left:50.0),
+          child: Text("Beautiful View..!"),
+        ),
+        trailing: Container(
+          color: Colors.red,
+          height: 40,
+          width: 60,
+          child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
+        )
+        ,
       ),
-      subtitle: Padding(
-        padding: EdgeInsets.only(left:50.0),
-        child: Text("Beautiful View..!"),
-      ),
-      trailing: Container(
-        color: Colors.red,
-        height: 40,
-        width: 60,
-        child: Center(child: Text("Confirm",style: TextStyle(color: Colors.white),)),
-      )
-      ,
     ),
   ];
 }

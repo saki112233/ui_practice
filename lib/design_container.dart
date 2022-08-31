@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled12/Widgets/product_banner.dart';
 import 'package:untitled12/model/list_model.dart';
 
 import 'Widgets/price_details.dart';
@@ -35,153 +36,37 @@ class _DesignContainerState extends State<DesignContainer> {
                           width: 300,
                         ),
                         Padding(
-                          padding: EdgeInsets.only(left: 320, top: 10),
+                          padding: EdgeInsets.only(left: screenWidth*.75, top: 10),
                           child: CircleAvatar(
                             backgroundColor: Colors.grey,
                             child: IconButton(
                                 color: Colors.white,
                                 onPressed: () {},
-                                icon: Icon(Icons.logout)),
+                                icon: const Icon(Icons.logout)),
                           ),
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
                       child: PriceDeatils(
                           newPrice: "\$ 25.5",
                           oldPrice: "\$100",
                           discount: "get new discount"),
                     ),
-                    Container(
-                      color: Colors.pink.shade100,
-                      height: MediaQuery.of(context).size.height * .1,
-                      width: double.infinity,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Row(
-                            children: [
-                              SizedBox(
-                                width: 10,
-                              ),
-                              CircleAvatar(
-                                child: Icon(
-                                  Icons.backpack,
-                                  color: Colors.white,
-                                  size: 20,
-                                ),
-                                backgroundColor: Colors.pinkAccent,
-                                radius: 15,
-                              ),
-                              SizedBox(
-                                width: 5,
-                              ),
-                              Text(
-                                "Item Description",
-                                style: TextStyle(
-                                    color: Colors.pinkAccent,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Text(
-                                "New Arrival",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 20,
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Expanded(
-                                flex: 4,
-                                child: Row(
-                                  children: [
-                                    SizedBox(
-                                      width: 10,
-                                    ),
-                                    Icon(
-                                      Icons.verified_outlined,
-                                      color: Colors.pinkAccent,
-                                    ),
-                                    SizedBox(
-                                      width: 5,
-                                    ),
-                                    Text(
-                                      "verified",
-                                      style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.w900),
-                                    ),
-                                    SizedBox(
-                                      width: 15,
-                                    ),
-                                    Icon(
-                                      Icons.account_circle_outlined,
-                                      color: Colors.pinkAccent,
-                                    ),
-                                    SizedBox(
-                                      width: 5,
-                                    ),
-                                    Text(
-                                      "account",
-                                      style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.w900),
-                                    ),
-                                    SizedBox(
-                                      width: 15,
-                                    ),
-                                    Icon(
-                                      Icons.info_outlined,
-                                      color: Colors.pinkAccent,
-                                    ),
-                                    SizedBox(
-                                      width: 5,
-                                    ),
-                                    Text(
-                                      "info",
-                                      style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.w900),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                child: Icon(
-                                  Icons.navigate_next_outlined,
-                                  color: Colors.grey,
-                                ),
-                                flex: 1,
-                              )
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                    SizedBox(
+                    const ProductBanner(),
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
-                        Expanded(
+                        const Expanded(
                           flex: 2,
                           child: Text(
                             "120 more options",
@@ -190,7 +75,7 @@ class _DesignContainerState extends State<DesignContainer> {
                         ),
                         Expanded(
                             child: Row(
-                          children: [
+                          children: const [
                             Text(
                               "see more",
                               style:
@@ -210,32 +95,34 @@ class _DesignContainerState extends State<DesignContainer> {
             Expanded(
               child: Container(
                 color: Colors.white,
+                height: 100,
                 child: ListWheelScrollView(
                   controller: _controller,
                   itemExtent: 80,
                   magnification: 1.2,
-
-                  physics: FixedExtentScrollPhysics(),
+                  diameterRatio: 0.4,
+                  physics: const FixedExtentScrollPhysics(),
                   children: ListModel.listTiles.toList(), // Here listtiles is the List of Widgets.
                 ),
               ),
             ),
-            Container(
+            SizedBox(
               height: 65,
               width: double.infinity,
-              color: Colors.red,
+              // color: Colors.red,
               child: Row(
                 children: [
                   Expanded(
+                    flex: 1,
                     child: Container(
                       color: Colors.white,
                       child: Row(
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                           Column(
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.favorite_border_outlined,
                                 color: Colors.grey,
@@ -248,11 +135,11 @@ class _DesignContainerState extends State<DesignContainer> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 40,
                           ),
                           Column(
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.contact_support_outlined,
                                 color: Colors.red,
@@ -265,19 +152,18 @@ class _DesignContainerState extends State<DesignContainer> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                         ],
                       ),
                     ),
-                    flex: 1,
                   ),
                   Container(
                     color: Colors.red.shade100,
                     width: 100,
                     child: Column(
-                      children: [
+                      children: const [
                         SizedBox(
                           height: 10,
                         ),
@@ -294,7 +180,7 @@ class _DesignContainerState extends State<DesignContainer> {
                     width: 130,
                     color: Colors.red,
                     child: Column(
-                      children: [
+                      children: const [
                         SizedBox(
                           height: 10,
                         ),
@@ -316,3 +202,5 @@ class _DesignContainerState extends State<DesignContainer> {
     ));
   }
 }
+
+
