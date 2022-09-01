@@ -70,7 +70,7 @@ class BottomNav extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                  "\&100",
+                  "&100",
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 Text("old price",
@@ -87,7 +87,7 @@ class BottomNav extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                  "\&90",
+                  "&90",
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 Text("new price",
