@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled12/design_container.dart';
+import 'package:untitled12/ui_page/homePage.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const DesignContainer(),
+      home:  MyHomePage(),
     );
   }
 }
