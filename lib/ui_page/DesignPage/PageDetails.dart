@@ -3,9 +3,10 @@
 import 'package:flutter/material.dart';
 
 class PageDetails extends StatelessWidget {
-  const PageDetails({
-    Key? key,
+ const  PageDetails({
+    Key? key,required this.description,
   }) : super(key: key);
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +14,12 @@ class PageDetails extends StatelessWidget {
       height: 55,
       child: Stack(
         children: [
-          const Align(
+           Align(
             alignment: Alignment.centerLeft,
             child: Text(
               maxLines: 2,
-              "This is Product Description.[We alaways care about our customers]",
-              style: TextStyle(
+              description,
+              style: const TextStyle(
                   fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),

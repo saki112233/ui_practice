@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
             recentPrice: recentPrice,
           ),
         ),
-        const PageDetails(),
+         const PageDetails(description: description,),
         const SizedBox(
           height: 10,
         ),

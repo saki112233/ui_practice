@@ -23,7 +23,11 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  MyHomePage(),
+      home:  const SafeArea(
+        child: Scaffold(
+          body: MyHomePage(),
+        ),
+      ),
     );
   }
 }
